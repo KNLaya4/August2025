@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Selenium.TC0012_TestNG"/>
+      <class name="pac1.Lab8_4"/>
+      <class name="pac1.Lab8_3"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
