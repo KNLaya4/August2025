@@ -14,7 +14,7 @@ public class TC0014 {
     @Test
     public void test2(String browser) {
         WebDriver driver = null;
-        String url = "https://www.flipkart.com/";
+        String URL = "https://www.flipkart.com/";
 
         if (browser.equalsIgnoreCase("chrome")) {
             System.out.println("This is Chrome test");

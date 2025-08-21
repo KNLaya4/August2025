@@ -2,28 +2,86 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-19T21:53:50 IST" name="TutorialsNinjaSuite" finished-at="2025-08-19T21:53:59 IST" duration-ms="9625">
+  <suite started-at="2025-08-21T16:34:07 IST" name="Suite" finished-at="2025-08-21T16:34:22 IST" duration-ms="14403">
     <groups>
     </groups>
-    <test started-at="2025-08-19T21:53:50 IST" name="Lab006Test" finished-at="2025-08-19T21:53:59 IST" duration-ms="9625">
-      <class name="pac1.Lab006">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pac1.Lab006@6f03482]" started-at="2025-08-19T21:53:50 IST" name="setUp" finished-at="2025-08-19T21:53:54 IST" duration-ms="4256" status="PASS">
+    <test started-at="2025-08-21T16:34:07 IST" name="Test" finished-at="2025-08-21T16:34:22 IST" duration-ms="14403">
+      <class name="pac1.Lab11_4">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:pac1.Lab11_4@69453e37]" started-at="2025-08-21T16:34:07 IST" name="beforeSuite" finished-at="2025-08-21T16:34:07 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:1, instance:pac1.Lab006@6f03482]" started-at="2025-08-19T21:53:54 IST" name="loginTest" finished-at="2025-08-19T21:53:57 IST" duration-ms="2596" status="PASS">
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pac1.Lab11_4@69453e37]" started-at="2025-08-21T16:34:07 IST" name="beforeTest" finished-at="2025-08-21T16:34:07 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method signature="addMonitorToWishlist()[pri:2, instance:pac1.Lab006@6f03482]" started-at="2025-08-19T21:53:57 IST" name="addMonitorToWishlist" finished-at="2025-08-19T21:53:59 IST" duration-ms="2730" status="PASS">
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:pac1.Lab11_4@69453e37]" started-at="2025-08-21T16:34:15 IST" name="beforeClass" finished-at="2025-08-21T16:34:15 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addMonitorToWishlist -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pac1.Lab006@6f03482]" started-at="2025-08-19T21:53:59 IST" name="tearDown" finished-at="2025-08-19T21:53:59 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:pac1.Lab11_4@69453e37]" started-at="2025-08-21T16:34:15 IST" name="beforeMethod" finished-at="2025-08-21T16:34:18 IST" duration-ms="2492" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- pac1.Lab006 -->
-    </test> <!-- Lab006Test -->
-  </suite> <!-- TutorialsNinjaSuite -->
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f()[pri:0, instance:pac1.Lab11_4@69453e37]" started-at="2025-08-21T16:34:18 IST" name="f" finished-at="2025-08-21T16:34:22 IST" duration-ms="3796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pac1.Lab11_4@69453e37]" started-at="2025-08-21T16:34:22 IST" name="afterMethod" finished-at="2025-08-21T16:34:22 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:pac1.Lab11_4@69453e37]" started-at="2025-08-21T16:34:22 IST" name="afterClass" finished-at="2025-08-21T16:34:22 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:pac1.Lab11_4@69453e37]" started-at="2025-08-21T16:34:22 IST" name="afterTest" finished-at="2025-08-21T16:34:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:pac1.Lab11_4@69453e37]" started-at="2025-08-21T16:34:22 IST" name="afterSuite" finished-at="2025-08-21T16:34:22 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- pac1.Lab11_4 -->
+      <class name="pac1.Lab11_3">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:pac1.Lab11_3@70325e14]" started-at="2025-08-21T16:34:07 IST" name="beforeSuite" finished-at="2025-08-21T16:34:07 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pac1.Lab11_3@70325e14]" started-at="2025-08-21T16:34:07 IST" name="beforeTest" finished-at="2025-08-21T16:34:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:pac1.Lab11_3@70325e14]" started-at="2025-08-21T16:34:07 IST" name="beforeClass" finished-at="2025-08-21T16:34:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:pac1.Lab11_3@70325e14]" started-at="2025-08-21T16:34:07 IST" name="beforeMethod" finished-at="2025-08-21T16:34:14 IST" duration-ms="6822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f()[pri:0, instance:pac1.Lab11_3@70325e14]" started-at="2025-08-21T16:34:14 IST" name="f" finished-at="2025-08-21T16:34:15 IST" duration-ms="1208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pac1.Lab11_3@70325e14]" started-at="2025-08-21T16:34:15 IST" name="afterMethod" finished-at="2025-08-21T16:34:15 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:pac1.Lab11_3@70325e14]" started-at="2025-08-21T16:34:15 IST" name="afterClass" finished-at="2025-08-21T16:34:15 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:pac1.Lab11_3@70325e14]" started-at="2025-08-21T16:34:22 IST" name="afterTest" finished-at="2025-08-21T16:34:22 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:pac1.Lab11_3@70325e14]" started-at="2025-08-21T16:34:22 IST" name="afterSuite" finished-at="2025-08-21T16:34:22 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- pac1.Lab11_3 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
