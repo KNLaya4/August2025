@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Lab14Suite]">
+  <test thread-count="5" name="Lab14_Selenium(failed)">
+    <classes>
+      <class name="pac1.Lab14_properties">
+        <methods>
+          <include name="teardown"/>
+          <include name="loginTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- pac1.Lab14_properties -->
+    </classes>
+  </test> <!-- Lab14_Selenium(failed) -->
+</suite> <!-- Failed suite [Lab14Suite] -->
