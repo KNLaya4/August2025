@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pac1.Lab15">
+      <class name="pac1.Lab16_Selenium">
         <methods>
-          <include name="readCsvAndOpenUrl"/>
-          <include name="setup"/>
-          <include name="teardown"/>
+          <include name="afterMethod"/>
+          <include name="f"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- pac1.Lab15 -->
+      </class> <!-- pac1.Lab16_Selenium -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -6,69 +6,89 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pac1.login_pageobjects;
 
 public class LoginSteps {
 	WebDriver driver;
 	
-	
-@Given("Launch the Browser")
-public void launch_the_browser() {
-    
-    WebDriverManager.chromedriver().setup();
-	 driver=new ChromeDriver();
-	    
-    
-}
+	@Given("Launch the Browser")
+	public void launch_the_browser() {
+	    // Write code here that turns the phrase above into concrete actions
+	   	    
+	    WebDriverManager.chromedriver().setup();
+		 driver=new ChromeDriver();
+		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		    
+	}
 
-@Given("Navigate to the URL")
-public void navigate_to_the_url() {
-    
-    driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+	@Given("Navigate to the URL")
+	public void navigate_to_the_url() {
+	    // Write code here that turns the phrase above into concrete actions
+		
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	   
-}
+	}
 
-@When("Enter the username and password")
-public void enter_the_username_and_password() {
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	@When("Enter the username and password")
+	public void enter_the_username_and_password() {
+		driver.findElement(By.name("username")).sendKeys("Admin");
+				driver.findElement(By.name("password")).sendKeys("admin123");
+	}
 
-    WebElement usernameField = wait.until(
-        ExpectedConditions.visibilityOfElementLocated(By.name("username"))
-    );
-    usernameField.sendKeys("Admin");
-
-    WebElement passwordField = wait.until(
-        ExpectedConditions.visibilityOfElementLocated(By.name("password"))
-    );
-    passwordField.sendKeys("admin123");
-}
-
-
-@When("Click on Login Button")
-public void click_on_login_button() {
-    
-    driver.findElement(By.xpath("//button[@type='submit']")).click();
 	
-}
+	@When("Enter the invalid username and password")
+	public void enter_the_invalid_username_and_password() {
+		driver.findElement(By.name("username")).sendKeys("fgdfgdfg");
+				driver.findElement(By.name("password")).sendKeys("admin123fgdf");
+	}
 
-@Then("Login should be successful")
-public void login_should_be_successful() {
-    
-    String title=driver.getTitle();
-	System.out.println("The Title is:"+title);
-	if(title.equalsIgnoreCase("OrangeHRM"))
+	@Then("Close the browser")
+	public void Close_the_browser()
+	
 	{
-		System.out.println("Login Suucessfull");
+		driver.quit();
 	}
-	else
-	{
-		System.out.println("Login unSuucessfull");
+	@When("Click on Login Button")
+	public void click_on_login_button() {
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		
 	}
-}
+
+	@Then("Login should be successful")
+	public void login_should_be_successful() {
+		String title=driver.getTitle();
+		System.out.println("The Title is:"+title);
+		if(title.equalsIgnoreCase("OrangeHRM"))
+		{
+			System.out.println("Login Suucessfull");
+		}
+		else
+		{
+			System.out.println("Login unSuucessfull");
+		}
+	}
+	@Then("Login should be unsuccessful")
+	public void login_should_be_unsuccessful() {
+		WebElement error=driver.findElement(By.xpath("//p[text()='Invalid credentials']"));
+		if(error.isDisplayed())
+		{
+			System.out.println("login unsccessfull");
+		}
+				
+		
+	}
+     
+     
+	
+	@Then("verify dashboard")
+	public void verify_dashboard() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
 }
