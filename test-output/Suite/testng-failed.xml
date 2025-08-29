@@ -3,19 +3,11 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="pac1.Lab14_Selenium">
+      <class name="jenkins.jenkinks_1">
         <methods>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="afterTest"/>
-          <include name="beforeSuite"/>
-          <include name="afterClass"/>
-          <include name="afterSuite"/>
           <include name="f"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- pac1.Lab14_Selenium -->
+      </class> <!-- jenkins.jenkinks_1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,30 +1,24 @@
 package Question;
 
-import org.testng.annotations.Test;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Q1{
-    WebDriver driver;
-
-    @BeforeClass
-    public void setup() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-    }
-
-    @Test
-    public void openGoogle() {
-        driver.get("https://www.google.com");
-        System.out.println("Page Title: " + driver.getTitle());
-    }
-
-    @AfterClass
-    public void tearDown() {
-        driver.quit();
-    }
-}
+public class Q1 {
+	WebDriver driver;
+  @Test
+  public void f() {
+	  WebDriverManager.chromedriver().setup();
+	  driver=new ChromeDriver();
+	  driver.get("https://www.google.com");
+	  String s=driver.getTitle();
+	  System.out.println(s);
+  }
+  @AfterMethod
+  public void afterMethod() {
+	  driver.quit();
+  }
+  }

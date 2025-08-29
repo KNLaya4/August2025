@@ -3,35 +3,43 @@ package Question;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Q3 {
 	WebDriver driver;
-  @Test
-  public void f() {
-	  driver =new ChromeDriver();
+ @Test
+ public void f() throws InterruptedException {
+	  Thread.sleep(3000);
+	  driver.get("https://www.amazon.in/");
+	  Thread.sleep(3000);
+	  WebElement search = driver.findElement(By.id("twotabsearchtextbox"));
+	  search.sendKeys("laptop",Keys.ENTER);
+	  Thread.sleep(3000);
+	  List<WebElement> products = driver.findElements(By.cssSelector("h2.a-size-medium"));
+	  System.out.println("First 5 products name");
+	  for(int i=0;i<5;i++) {
+		
+		  System.out.println((i+1)+ ": " + products.get(i).getText());
+ }
+ }
+ @BeforeClass
+ public void setup() {
+	  WebDriverManager.chromedriver().setup();
+	  driver = new ChromeDriver();
 	  driver.manage().window().maximize();
-	  driver.get("https://www.amazon.in");
-	  driver.findElement(By.xpath("/html/body/div/div[1]/div[3]/div/div/form/div/div/span/span/button")).click();
 	  
-	  driver.findElement(By.id("twotabsearchtextbox")).sendKeys("laptop");
-	  driver.findElement(By.id("nav-search-submit-button")).click();
+		  
 	  
-	  List<WebElement> laptop=driver.findElements(By.xpath("//div[@role='listitem' and @data-component-type='s-search-result']"));
-	  int i=0;
-	  for(WebElement lap:laptop)
-	  {
-		  i++;
-		  System.out.println(lap.getText());
-		  System.out.println();
-		  if(i==5)
-		  {
-			  break;
-		  }
-	  }
-	  
-  }
+ }
+ @AfterClass
+ public void close() {
+	  driver.quit();
+ }
 }
